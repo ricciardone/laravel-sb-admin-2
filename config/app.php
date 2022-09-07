@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Sao_Paulo',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -183,6 +183,7 @@ return [
         /*
          * Package Service Providers...
          */
+        DevMarketer\EasyNav\EasyNavServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -245,6 +246,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // other aliases
+
+        'Nav' => DevMarketer\EasyNav\EasyNavFacade::class,
     ],
 
 ];
